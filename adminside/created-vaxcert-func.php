@@ -15,7 +15,7 @@ if(isset($_POST['selecteddeleteid'])){
     $result = mysqli_query($mysqli,$query);
     $count = mysqli_num_rows($result);
     $output= '';
-    if($count>0){
+    if($count > 0 ){
         while($rows = mysqli_fetch_assoc($result)){
             $datecreated = strtotime($rows['date_created']);
             $fullname = $rows['last_name'].", ".$rows['first_name']." ".$rows['middle_name'];
