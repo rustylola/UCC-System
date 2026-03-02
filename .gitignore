@@ -1,2 +1,4 @@
 # IGNORE DATABASE
 database.php
+adminside/database.php
+.env
